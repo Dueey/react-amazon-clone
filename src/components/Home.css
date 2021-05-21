@@ -13,9 +13,12 @@
   margin-right: 5px;
 }
 
+/* @media (max-width: 768) {
+  .home_row {
+    display: grid;
+  }
+} */
+
 .home_img {
   width: 100%;
-  z-index: -1;
-  margin-bottom: -150px;
-  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }

@@ -1,65 +1,96 @@
 import React from "react";
 import "./Home.css";
 import Product from "./Product";
+import ImgSlider from "./ImgSlider";
+import AddNotification from "./AddNotification";
 
 export default function Home() {
   return (
     <div className='home'>
       <div className='home_container'>
-        <img
-          className='home_img'
-          src='https://images-eu.ssl-images-amazon.com/images/G/02/digital/video/merch2016/Hero/Covid19/Generic/GWBleedingHero_ENG_COVIDUPDATE__XSite_1500x600_PV_en-GB._CB428684220_.jpg'
-          alt='home_img'
-        />
+        <ImgSlider className='home_img' />
         <div className='home_row'>
           <Product
             id='12321341'
-            title='The Lean Startup: How Constant Innovation Creates Radically Successful Businesses Paperback'
-            price={11.96}
+            title='Samsung Galaxy Buds+ Plus, True Wireless Earbuds (Wireless Charging Case Included), Black – US Version'
+            price={99.99}
             rating={5}
-            image='https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._SX325_BO1,204,203,200_.jpg'
+            image='https://m.media-amazon.com/images/I/317K8jUbSyL._AC_SY240_.jpg'
           />
           <Product
             id='49538094'
-            title='Kenwood kMix Stand Mixer for Baking, Stylish Kitchen Mixer with K-beater, Dough Hook and Whisk, 5 Litre Glass Bowl'
-            price={239.0}
-            rating={4}
-            image='https://images-na.ssl-images-amazon.com/images/I/81O%2BGNdkzKL._AC_SX450_.jpg'
+            title='ProSupps® Mr. Hyde® Xtreme (Former NitroX) Pre-Workout Powder Energy Drink - Intense Sustained Energy, Pumps & Focus with Beta Alanine, Creatine & Nitrosigine, (30 Servings, Pixie Dust)'
+            price={29.99}
+            rating={5}
+            image='https://m.media-amazon.com/images/I/91QNH9iNWZS._AC_UL320_.jpg'
           />
         </div>
+
         <div className='home_row'>
           <Product
             id='4903850'
-            title="Samsung LC49RG90SSUXEN 49' Curved LED Gaming Monitor"
-            price={199.99}
-            rating={3}
-            image='https://images-na.ssl-images-amazon.com/images/I/71Swqqe7XAL._AC_SX466_.jpg'
+            title='MSI GeForce RTX 2080 Super Gaming x Trio Graphic Card - 8GB GDDR6'
+            price={880.99}
+            rating={5}
+            image='https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQkCWBkVmjFFMuclOBBW6g81br7rBy3WEJSULQQiCcyeWXJ5pV2kq5uxlya1gcogpLmKxMkIKDBxTpaZwR26kKhVmEnw8xRMHPrHMG0KDZ6sdtgmpJ5IKHyvg&usqp=CAE'
           />
           <Product
             id='23445930'
-            title='Amazon Echo (3rd generation) | Smart speaker with Alexa, Charcoal Fabric'
-            price={98.99}
+            title='Intel Core i9-9900K Desktop Processor 8 Cores up to 5.0 GHz Turbo Unlocked LGA1151 300 Series 95W'
+            price={405.0}
             rating={5}
-            image='https://media.very.co.uk/i/very/P6LTG_SQ1_0000000071_CHARCOAL_SLf?$300x400_retinamobilex2$'
+            image='https://m.media-amazon.com/images/I/61qUfPKfqJL._AC_UY218_.jpg'
           />
           <Product
             id='3254354345'
-            title='New Apple iPad Pro (12.9-inch, Wi-Fi, 128GB) - Silver (4th Generation)'
-            price={598.99}
-            rating={4}
-            image='https://images-na.ssl-images-amazon.com/images/I/816ctt5WV5L._AC_SX385_.jpg'
+            title='Star Wars - This is Not A Toy - 1000 Piece Jigsaw Puzzle'
+            price={10.97}
+            rating={5}
+            image='https://m.media-amazon.com/images/I/81GDVD2dvoL._AC_UY218_.jpg'
           />
         </div>
 
         <div className='home_row'>
           <Product
             id='90829332'
-            title="Samsung LC49RG90SSUXEN 49' Curved LED Gaming Monitor - Super Ultra Wide Dual WQHD 5120 x 1440"
-            price={1094.98}
-            rating={4}
-            image='https://images-na.ssl-images-amazon.com/images/I/6125mFrzr6L._AC_SX355_.jpg'
+            title='Acer Nitro VG240Y bmiix 23.8in Full HD (1920 x 1080) IPS Monitor with AMD Radeon FREESYNC Technology - 1ms VRB | 75Hz Refresh | (2 x HDMI Ports & 1 x VGA),Black'
+            price={168.99}
+            rating={5}
+            image='https://m.media-amazon.com/images/I/71JPEEGxpWL._AC_UY218_.jpg'
+          />
+          <Product
+            id='20829789'
+            title='TAMASHII NATIONS Rx-0 Unicorn Gundam Unit 02 Banshee Mobile Suit Gundam UC, Multi'
+            price={39.81}
+            rating={5}
+            image='https://m.media-amazon.com/images/I/81OseJi1WiL._AC_UL320_.jpg'
           />
         </div>
+
+        <div className='home_row'>
+          <Product
+            id='4903850'
+            title='Wacom Bamboo Splash Pen Tablet (CTL471)'
+            price={149.99}
+            rating={5}
+            image='https://m.media-amazon.com/images/I/31GTc+SjQmL._AC_UY218_.jpg'
+          />
+          <Product
+            id='23445930'
+            title='Optimum Nutrition Gold Standard 100% Whey, Double Rich Chocolate, 7.64 lb (3.47 kg)'
+            price={79.95}
+            rating={5}
+            image='https://m.media-amazon.com/images/I/81ameR4JOXL._AC_UL320_.jpg'
+          />
+          <Product
+            id='3254354345'
+            title='Fire TV Stick Lite with Alexa Voice Remote Lite (no TV controls) | HD streaming device | 2020 release'
+            price={29.99}
+            rating={5}
+            image='https://m.media-amazon.com/images/I/51Da2Z+FTFL._AC_UY218_.jpg'
+          />
+        </div>
+        <AddNotification />
       </div>
     </div>
   );

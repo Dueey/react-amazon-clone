@@ -16,10 +16,11 @@ export default function Header() {
 
   return (
     <div className='header'>
-      <Link to='/'>
+      <Link to='/' className='logo_container'>
         <img
           className='header_logo'
           src='http://pngimg.com/uploads/amazon/amazon_PNG11.png'
+          alt='header_logo'
         />
       </Link>
       <div className='header_search'>
@@ -27,7 +28,7 @@ export default function Header() {
         <Search className='header_searchIcon' />
       </div>
       <div className='header_nav'>
-        <Link to={!user && "/login"}>
+        <Link to={!user && "/login"} className='option_container'>
           <div className='header_option' onClick={handleAuthentication}>
             <span className='header_optionLineOne'>
               Hello, {!user ? "Guest" : user.email}
@@ -37,18 +38,20 @@ export default function Header() {
             </span>
           </div>
         </Link>
-        <Link to='/orders'>
+        <Link to='/orders' className='option_container'>
           <div className='header_option'>
             <span className='header_optionLineOne'>Returns</span>
             <span className='header_optionLineTwo'>& Orders</span>
           </div>
         </Link>
-
-        <div className='header_option'>
-          <span className='header_optionLineOne'>Your</span>
-          <span className='header_optionLineTwo'>Prime</span>
+        <div className='option_container'>
+          <div className='header_option'>
+            <span className='header_optionLineOne'>Your</span>
+            <span className='header_optionLineTwo'>Prime</span>
+          </div>
         </div>
-        <Link to='/checkout'>
+
+        <Link to='/checkout' className='option_container'>
           <div className='header_optionBasket'>
             <ShoppingCart />
             <span className='header_optionLineTwo header_basketCount'>
