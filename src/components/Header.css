@@ -31,7 +31,7 @@ a {
 
 @media (max-width: 768px) {
   .header {
-    margin-right: -5px;
+    padding-right: 20px;
   }
   .header_logo {
     display: none;
