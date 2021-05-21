@@ -47,7 +47,8 @@ function ImgSlider() {
 
 const Carousel = styled(Slider)`
   margin-bottom: -350px;
-  width: 1500px;
+  max-width: 1500px;
+  width: 100%;
   z-index: 1;
 
   & > button {
@@ -84,6 +85,13 @@ const Carousel = styled(Slider)`
   .slick-next {
     top: 130px;
   }
+
+  @media (max-width: 768px) {
+    margin-bottom: 0;
+    & > button {
+      opacity: 0;
+    }
+  }
 `;
 
 const Wrap = styled.div`
@@ -97,6 +105,12 @@ const Wrap = styled.div`
       rgba(0, 0, 0, 1),
       rgba(0, 0, 0, 0)
     );
+  }
+
+  @media (max-width: 768px) {
+    img {
+      mask-image: none;
+    }
   }
 `;
 

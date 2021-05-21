@@ -64,14 +64,16 @@ function Footer() {
 
 const Container = styled.div`
   height: 510px;
-  background-color: #131a22;
+  /* background-color: #131a22; */
 `;
 
 const Wrap = styled.div`
   padding-top: 70px;
-  padding-left: 120px;
-  display: flex;
+  padding-left: 80px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   justify-content: center;
+  background-color: #131a22;
   div {
     padding: 0px 70px 70px 10px;
     color: #fff;
@@ -85,6 +87,12 @@ const Wrap = styled.div`
       color: lightgray;
       padding: 5px;
     }
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    justify-content: center;
+    padding-left: 25vw;
   }
 `;
 
