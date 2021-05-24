@@ -92,6 +92,10 @@ const Carousel = styled(Slider)`
       opacity: 0;
     }
   }
+
+  @media (min-width: 769px) and (max-width: 1400px) {
+    margin-bottom: -20%;
+  }
 `;
 
 const Wrap = styled.div`

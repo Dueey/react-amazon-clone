@@ -37,6 +37,14 @@
   border-color: #a88734 #9c7e31 #846a29;
   color: #111;
   cursor: pointer;
+  padding: 5px;
+  border-radius: 3px;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1));
+}
+
+.product > button:hover {
+  background: #f3b926;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1));
 }
 
 .product_price {
@@ -44,7 +52,7 @@
 }
 
 .product_info {
-  height: 100px;
+  height: 140px;
   margin-bottom: 15px;
 }
 

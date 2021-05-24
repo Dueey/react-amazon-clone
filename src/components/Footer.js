@@ -69,14 +69,16 @@ const Container = styled.div`
 
 const Wrap = styled.div`
   padding-top: 70px;
-  padding-left: 80px;
+  padding-left: 150px;
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   justify-content: center;
   background-color: #131a22;
+
   div {
     padding: 0px 70px 70px 10px;
     color: #fff;
+
     span {
       font-weight: 700;
       font-size: 15px;

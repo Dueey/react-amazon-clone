@@ -16,3 +16,13 @@
   font-weight: 500;
   text-align: right;
 }
+
+@media (max-width: 768px) {
+  .order {
+    padding: 20px;
+  }
+
+  .order_id {
+    top: 22px;
+  }
+}

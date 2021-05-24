@@ -90,7 +90,7 @@ export default function Home() {
             image='https://m.media-amazon.com/images/I/51Da2Z+FTFL._AC_UY218_.jpg'
           />
         </div>
-        <AddNotification />
+        {/* <AddNotification /> */}
       </div>
     </div>
   );
