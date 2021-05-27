@@ -1,6 +1,9 @@
 import React from "react";
 import "./Product.css";
 import { useStateValue } from "./StateProvider";
+import styled from "styled-components";
+import ReactNotification, { store } from "react-notifications-component";
+import "react-notifications-component/dist/theme.css";
 
 export default function Product({ id, title, image, price, rating }) {
   const [{ basket }, dispatch] = useStateValue();
@@ -17,6 +20,35 @@ export default function Product({ id, title, image, price, rating }) {
         rating: rating,
       },
     });
+
+    store.addNotification({
+      // title: "Item Added to Basket",
+      // message: title,
+      content: productNotification,
+      type: "warning",
+      insert: "top",
+      container: "top-right",
+      animationIn: ["animate__animated", "animate__fadeIn"],
+      animationOut: ["animate__animated", "animate__fadeOut"],
+      dismiss: {
+        duration: 5000,
+        onScreen: false,
+      },
+    });
+
+    function productNotification() {
+      return (
+        <div className='product_notification'>
+          <h1>Item Added to Basket</h1>
+          <div className='notification_container'>
+            <img src={image} alt='' />
+            <div className='product_info_notification'>
+              <p>{title}</p>
+            </div>
+          </div>
+        </div>
+      );
+    }
   };
 
   return (
