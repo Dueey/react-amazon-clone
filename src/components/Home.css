@@ -22,6 +22,9 @@
     display: grid;
     margin: 0;
   }
+  .reactNotification {
+    display: none;
+  }
 }
 
 /* .home_img {
