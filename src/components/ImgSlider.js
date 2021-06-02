@@ -41,6 +41,18 @@ function ImgSlider() {
           alt='home_img_4'
         />
       </Wrap>
+      <Wrap>
+        <img
+          src='https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2021/img/Events/Pride/Traffic-Drivers/Pride_2021_desktop_tablet_tall_hero_Books_1x._CB669562869_.jpg'
+          alt='home_img_5'
+        />
+      </Wrap>
+      <Wrap>
+        <img
+          src='https://images-na.ssl-images-amazon.com/images/G/01/kindle/journeys/MmM1ZTU0ODYt/MmM1ZTU0ODYt-M2Q3NzE1MWQt-w1500._CB668785752_.jpg'
+          alt='home_img_6'
+        />
+      </Wrap>
     </Carousel>
   );
 }
