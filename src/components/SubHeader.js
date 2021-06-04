@@ -36,16 +36,19 @@ const Container = styled.div`
   height: 40px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   background-color: #232f3e;
   position: sticky;
   top: 75px;
   z-index: 100;
+  overflow: hidden;
+  white-space: nowrap;
+  padding-left: 25px;
 `;
 
 const Wrap = styled.nav`
   color: white;
-  font-size: 0.6vw;
+  font-size: 14px;
   font-weight: 500;
   padding: 5px 11px;
   margin-bottom: 1px;
