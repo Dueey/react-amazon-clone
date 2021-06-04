@@ -43,9 +43,9 @@ const Container = styled.div`
   z-index: 100;
 `;
 
-const Wrap = styled.div`
+const Wrap = styled.nav`
   color: white;
-  font-size: 14px;
+  font-size: 0.6vw;
   font-weight: 500;
   padding: 5px 11px;
   margin-bottom: 1px;
@@ -69,6 +69,10 @@ const Wrap = styled.div`
   :hover {
     border: 1px solid white;
   }
+
+  /* @media (max-width: 1900px) {
+    font-size: 10px;
+  } */
 `;
 
 export default SubHeader;
