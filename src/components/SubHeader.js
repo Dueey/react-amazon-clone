@@ -4,7 +4,7 @@ import { ViewList, ArrowDropDown } from "@material-ui/icons";
 
 function SubHeader() {
   return (
-    <Container>
+    <Container id='main'>
       <Wrap>
         <ViewList className='viewList' />
         All
@@ -44,9 +44,14 @@ const Container = styled.div`
   overflow: hidden;
   white-space: nowrap;
   padding-left: 25px;
+  overflow-x: scroll;
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
 `;
 
-const Wrap = styled.nav`
+const Wrap = styled.div`
   color: white;
   font-size: 14px;
   font-weight: 500;
@@ -77,5 +82,12 @@ const Wrap = styled.nav`
     font-size: 10px;
   } */
 `;
+
+document.getElementById("main").addEventListener("mousewheel", function (e) {
+  e.preventDefault();
+  if (e.deltaY > 0) {
+    this.scrollLeft += 100;
+  } else this.scrollLeft -= 100;
+});
 
 export default SubHeader;
