@@ -1,10 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import { ViewList, ArrowDropDown } from "@material-ui/icons";
 
 function SubHeader() {
+  useEffect(() => {
+    document
+      .getElementById("subheader")
+      .addEventListener("mousewheel", function (e) {
+        e.preventDefault();
+        if (e.deltaY > 0) {
+          this.scrollLeft += 100;
+        } else this.scrollLeft -= 100;
+      });
+  }, []);
+
   return (
-    <Container id='main'>
+    <Container id='subheader'>
       <Wrap>
         <ViewList className='viewList' />
         All
@@ -44,11 +55,11 @@ const Container = styled.div`
   overflow: hidden;
   white-space: nowrap;
   padding-left: 25px;
-  overflow-x: scroll;
+  /* overflow-x: hidden;
 
   ::-webkit-scrollbar {
     display: none;
-  }
+  } */
 `;
 
 const Wrap = styled.div`
@@ -82,12 +93,5 @@ const Wrap = styled.div`
     font-size: 10px;
   } */
 `;
-
-document.getElementById("main").addEventListener("mousewheel", function (e) {
-  e.preventDefault();
-  if (e.deltaY > 0) {
-    this.scrollLeft += 100;
-  } else this.scrollLeft -= 100;
-});
 
 export default SubHeader;
