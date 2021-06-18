@@ -60,6 +60,10 @@ const Container = styled.div`
   ::-webkit-scrollbar {
     display: none;
   } */
+
+  @media (max-width: 768px) {
+    display: none;
+  } ;
 `;
 
 const Wrap = styled.div`

@@ -97,6 +97,7 @@ a {
 @media (max-width: 768px) {
   .header {
     padding-right: 20px;
+    justify-content: center;
   }
   .header_search {
     display: none;
